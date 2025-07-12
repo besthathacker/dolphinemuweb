@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dolphin Web Emulator</title>
+<style>
+  body, html {
+    margin: 0; height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    border: none;
+    width: 960px;
+    height: 540px;
+    max-width: 100vw;
+    max-height: 56.25vw; /* 16:9 aspect ratio */
+  }
+</style>
+</head>
+<body>
+  <h1 style="color:white;">Dolphin Web Emulator</h1>
+  <!-- Embed official Dolphin Web (hosted) -->
+  <iframe src="https://dolphin-web.net/play.html" allowfullscreen></iframe>
+  <p style="color:#ccc; max-width:600px; text-align:center; margin-top:1rem;">
+    This loads Dolphin Web emulator from its official host. You can upload your own Wii/GameCube ISOs and play directly in-browser.
+  </p>
+</body>
+</html>
